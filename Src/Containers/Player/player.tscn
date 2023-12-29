@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dd4c2er5p43wh"]
+
+[ext_resource type="Texture2D" uid="uid://bqhcxdyhq32f4" path="res://icon.svg" id="1_aimy7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1k32n"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_aimy7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1k32n")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.352799, -0.0922107)
